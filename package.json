@@ -1,0 +1,27 @@
+{
+  "name": "growly-landing",
+  "version": "1.0.0",
+  "description": "Full-stack landing page for Growly - AI Ad Creative Generator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start",
+    "start:client": "cd client && npm run preview"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "mongodb",
+    "tailwind",
+    "landing-page"
+  ],
+  "author": "Nikhil Maurta",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
