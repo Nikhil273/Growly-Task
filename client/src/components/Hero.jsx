@@ -96,16 +96,7 @@ const Hero = () => {
             <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-pink-400 rounded-full opacity-20 animate-pulse-slow"></div>
           </div>
 
-          {/* Social Proof */}
-          <div className="mt-16 text-center animate-fade-in">
-            <p className="text-gray-400 mb-6">Trusted by 1000+ businesses worldwide</p>
-            <div className="flex justify-center items-center space-x-8 opacity-60">
-              <div className="text-gray-400 font-semibold">Meta</div>
-              <div className="text-gray-400 font-semibold">Google</div>
-              <div className="text-gray-400 font-semibold">TikTok</div>
-              <div className="text-gray-400 font-semibold">LinkedIn</div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
