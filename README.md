@@ -2,6 +2,7 @@
 
 A modern, fully functional landing page for Growly, an AI-powered ad creative generator that helps small businesses create high-converting ads for Meta and Google Ads.
 
+
 ## Tech Stack
 
 - **Frontend**: React.js with Tailwind CSS
@@ -95,8 +96,7 @@ The application will be available at:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5000
 
-
-
+### Since the backend is hosted on Render with free vestion of that so it might be take some time to load the first time data or send data to the backend, so please be patient
 ## Hosted Links
 
 - **Frontend**: [https://growly-task.vercel.app/](https://growly-task.vercel.app/)
