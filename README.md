@@ -2,14 +2,14 @@
 
 A modern, fully functional landing page for Growly, an AI-powered ad creative generator that helps small businesses create high-converting ads for Meta and Google Ads.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js with Tailwind CSS
 - **Backend**: Node.js with Express.js
 - **Database**: MongoDB
 - **Hosting**: Vercel (Frontend) + Render (Backend)
 
-## 🎯 Features
+## Features
 
 - Modern, responsive landing page design
 - Lead capture form with validation
@@ -20,9 +20,9 @@ A modern, fully functional landing page for Growly, an AI-powered ad creative ge
 - Error handling and success messages
 - Mobile-first responsive design
 
-## 📦 Project Structure
+## Project Structure
 
-```
+````
 growly-landing/
 ├── client/          # React frontend
 │   ├── src/
@@ -34,10 +34,8 @@ growly-landing/
 │   ├── middleware/
 │   └── package.json
 ├── README.md
-└── package.json
-```
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -48,14 +46,17 @@ growly-landing/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/growly-landing.git
+git clone https://github.com/Nikhil273/Growly-Task
 cd growly-landing
-```
+````
 
 ### Install dependencies
 
 ```bash
-npm run install-deps
+cd client
+npm install
+cd ../server
+npm install
 ```
 
 ### Environment Setup
@@ -63,7 +64,7 @@ npm run install-deps
 1. Create `.env` file in the `server` directory:
 
 ```bash
-cp server/.env.example server/.env
+cd server/.env.example server/.env
 ```
 
 2. Update the `.env` file with your credentials:

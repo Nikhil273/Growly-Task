@@ -38,25 +38,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="text-gray-300 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
+              className=" bg-blue-900 text-gray-300 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection('features')}
-              className="text-gray-300 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
+              className=" bg-blue-900 text-gray-300 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
             >
               Features
             </button>
             <button
               onClick={() => scrollToSection('demo')}
-              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md transition-all duration-200 font-medium"
+              className="bg-primary-900 hover:bg-primary-700 text-white px-4 py-2 rounded-md transition-all duration-200 font-medium"
             >
               Get Demo
             </button>
             <Link
               to="/admin"
-              className="text-gray-300 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
+              className="text-gray-300 bg-blue-900 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
             >
               Admin
             </Link>

@@ -41,43 +41,19 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById('how-it-works')
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    How It Works
-                  </button>
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    How it Works
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById('features')
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     Features
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById('demo')
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     Get Demo
-                  </button>
+                  </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors">
