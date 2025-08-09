@@ -50,12 +50,12 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection('demo')}
-              className="bg-primary-900 hover:bg-primary-700 text-white px-4 py-2 rounded-md transition-all duration-200 font-medium"
+              className="bg-blue-900 hover:bg-gray-800 text-white px-4 py-2 rounded-md transition-all duration-200 font-medium"
             >
               Get Demo
             </button>
             <Link
-              to="/admin"
+              to="/admin/leads"
               className="text-gray-300 bg-blue-900 hover:text-white hover:bg-gray-800 px-3 py-2 rounded-md transition-all duration-200 font-medium"
             >
               Admin
@@ -97,7 +97,7 @@ const Header = () => {
                 Get Demo
               </button>
               <Link
-                to="/admin"
+                to="/admin/leads"
                 className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >

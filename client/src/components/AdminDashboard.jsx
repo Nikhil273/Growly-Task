@@ -48,7 +48,13 @@ const AdminDashboard = () => {
                   <thead className="bg-gray-700">
                     <tr>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
-                        Contact
+                        Name
+                      </th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
+                        Email
+                      </th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
+                        Phone
                       </th>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
                         Message
@@ -58,11 +64,11 @@ const AdminDashboard = () => {
                       </th>
 
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
-                        Created
+                        Submitted On
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
+                      {/* <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
                         Actions
-                      </th>
+                      </th> */}
                     </tr>
                   </thead>
                   <tbody className="bg-gray-800 divide-y divide-gray-700">
@@ -70,17 +76,18 @@ const AdminDashboard = () => {
                       <tr key={lead._id} className="hover:bg-gray-700">
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div>
-                            <div className="text-sm font-medium text-white">
+
+                            <div className="text-sm text-gray-400">
                               {lead.name}
                             </div>
 
-                            <div className="text-sm text-gray-400">
-                              {lead.email}
-                            </div>
-                            <div className="text-sm text-gray-400">
-                              {lead.phone}
-                            </div>
                           </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                          {lead.email ? lead.email : 'No email provided'}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                          {lead.phone ? lead.phone : 'No email provided'}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
                           {lead.message ? lead.message : 'No message provided'}
@@ -92,19 +99,19 @@ const AdminDashboard = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
                           {new Date(lead.createdAt).toLocaleDateString()}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                        {/* <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                           <div className="flex items-center gap-2">
                             <button
                               onClick={() => {
                                 const message = lead.message ? `Message: ${lead.message}` : 'No message provided'
-                                alert(`Lead Details:\\n\\nName: ${lead.name}\\nEmail: ${lead.email}\\nPhone: ${lead.phone}\\nBusiness Type: ${lead.businessType}\\nStatus: ${lead.status}\\n${message}\\nCreated: ${new Date(lead.createdAt).toLocaleString()}`)
+                                alert(`Lead Details:- Name: ${lead.name},  Email: ${lead.email}, Phone: ${lead.phone}, Business Type: ${lead.businessType}, ${message}, Created: ${new Date(lead.createdAt).toLocaleString()}`)
                               }}
                               className="text-primary-600 hover:text-primary-900 transition-colors"
                             >
                               <Eye size={16} />
                             </button>
                           </div>
-                        </td>
+                        </td> */}
                       </tr>
                     ))}
                   </tbody>

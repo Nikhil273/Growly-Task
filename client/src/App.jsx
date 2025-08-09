@@ -10,7 +10,7 @@ function App() {
       <div className="min-h-screen w-full bg-gray-900 transition-colors duration-300">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/leads" element={<AdminDashboard />} />
         </Routes>
         <Toaster
           position="top-right"
