@@ -86,10 +86,9 @@ EMAIL_TO=
 
 ```bash
 # Backend only
-npm run dev
-
-# Frontend only
 npm run start
+# Frontend only
+npm run dev
 ```
 
 The application will be available at:

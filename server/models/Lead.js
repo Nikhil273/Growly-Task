@@ -82,44 +82,6 @@ leadSchema.index({ email: 1 });
 leadSchema.index({ createdAt: -1 });
 leadSchema.index({ status: 1 });
 
-// Static method to get leads statistics
-leadSchema.statics.getStats = async function () {
-  const stats = await this.aggregate([
-    {
-      $group: {
-        _id: null,
-        totalLeads: { $sum: 1 },
-        newLeads: {
-          $sum: { $cond: [{ $eq: ['$status', 'new'] }, 1, 0] }
-        },
-        contactedLeads: {
-          $sum: { $cond: [{ $eq: ['$status', 'contacted'] }, 1, 0] }
-        },
-        qualifiedLeads: {
-          $sum: { $cond: [{ $eq: ['$status', 'qualified'] }, 1, 0] }
-        },
-        closedLeads: {
-          $sum: { $cond: [{ $eq: ['$status', 'closed'] }, 1, 0] }
-        }
-      }
-    }
-  ]);
-
-  return stats[0] || {
-    totalLeads: 0,
-    newLeads: 0,
-    contactedLeads: 0,
-    qualifiedLeads: 0,
-    closedLeads: 0
-  };
-};
-
-// Instance method to update status
-leadSchema.methods.updateStatus = function (newStatus) {
-  this.status = newStatus;
-  return this.save();
-};
-
 // Pre-save middleware to clean phone number
 leadSchema.pre('save', function (next) {
   if (this.phone) {

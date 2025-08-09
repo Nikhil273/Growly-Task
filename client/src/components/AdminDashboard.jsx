@@ -22,7 +22,6 @@ const AdminDashboard = () => {
 
 
   const apiUrl = import.meta.env.VITE_API_URL
-
   const fetchLeads = useCallback(async () => {
     try {
       setLoading(true)
