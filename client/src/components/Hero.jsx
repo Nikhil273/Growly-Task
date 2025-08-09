@@ -12,13 +12,12 @@ const Hero = () => {
     <section className="pt-20 pb-16 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 w-full min-h-screen">
       <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="text-center w-full">
-          {/* Badge */}
+
           <div className="inline-flex items-center gap-2 bg-primary-900/30 text-primary-300 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-fade-in">
             <Sparkles size={16} className="animate-bounce-slow" />
             AI-Powered Ad Generation
           </div>
 
-          {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading text-white mb-6 animate-slide-up">
             Create High-Converting Ads
             <br />
@@ -31,13 +30,13 @@ const Hero = () => {
             </span>
           </h1>
 
-          {/* Subheadline */}
+
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 w-full max-w-6xl mx-auto leading-relaxed animate-slide-up px-4">
             No design or copywriting needed. Just enter your product and let Growly do the rest.
             Generate professional ad creatives for Meta and Google Ads in minutes, not hours.
           </p>
 
-          {/* CTA Buttons */}
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in">
             <button
               onClick={scrollToDemo}
@@ -52,11 +51,11 @@ const Hero = () => {
             </button>
           </div>
 
-          {/* Hero Image/Illustration */}
+
           <div className="relative animate-fade-in w-full">
             <div className="bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 w-full mx-auto border border-gray-700">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                {/* Input Card */}
+
                 <div className="bg-gradient-to-br from-blue-900/20 to-blue-800/20 p-4 md:p-6 rounded-xl">
                   <div className="text-center">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded-lg mx-auto mb-3 md:mb-4 flex items-center justify-center">
@@ -67,7 +66,6 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* AI Processing Card */}
                 <div className="bg-gradient-to-br from-purple-900/20 to-purple-800/20 p-4 md:p-6 rounded-xl">
                   <div className="text-center">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-purple-500 rounded-lg mx-auto mb-3 md:mb-4 flex items-center justify-center">
@@ -78,7 +76,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Output Card */}
+
                 <div className="bg-gradient-to-br from-green-900/20 to-green-800/20 p-4 md:p-6 rounded-xl">
                   <div className="text-center">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-lg mx-auto mb-3 md:mb-4 flex items-center justify-center">
@@ -90,13 +88,9 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-
-            {/* Floating Elements */}
             <div className="absolute -top-4 -left-4 w-16 h-16 bg-yellow-400 rounded-full opacity-20 animate-bounce-slow"></div>
             <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-pink-400 rounded-full opacity-20 animate-pulse-slow"></div>
           </div>
-
-
         </div>
       </div>
     </section>

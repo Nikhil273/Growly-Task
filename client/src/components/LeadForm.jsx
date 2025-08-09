@@ -39,7 +39,6 @@ const LeadForm = () => {
         toast.success('Demo request submitted successfully!')
         setIsSubmitted(true)
 
-        // Reset form
         setFormData({
           name: '',
           email: '',
@@ -64,7 +63,6 @@ const LeadForm = () => {
     }
   }
 
-  // Success state
   if (isSubmitted) {
     return (
       <section id="demo" className="py-20 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800">
@@ -98,7 +96,7 @@ const LeadForm = () => {
     <section id="demo" className="py-20 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 w-full">
       <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="w-full max-w-4xl mx-auto">
-          {/* Section Header */}
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white mb-6">
               Ready to Transform Your
@@ -109,7 +107,6 @@ const LeadForm = () => {
             </p>
           </div>
 
-          {/* Form */}
           <div className="bg-gray-800 rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -130,7 +127,6 @@ const LeadForm = () => {
                   />
                 </div>
 
-                {/* Email */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address *
@@ -149,7 +145,7 @@ const LeadForm = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Phone */}
+
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
                     Phone Number *
@@ -167,7 +163,6 @@ const LeadForm = () => {
                   />
                 </div>
 
-                {/* Business Type */}
                 <div>
                   <label htmlFor="businessType" className="block text-sm font-medium text-gray-300 mb-2">
                     Business Type *
@@ -193,7 +188,7 @@ const LeadForm = () => {
                 </div>
               </div>
 
-              {/* Message */}
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Tell us about your business (Optional)
@@ -209,7 +204,7 @@ const LeadForm = () => {
                 />
               </div>
 
-              {/* Submit Button */}
+
               <div className="text-center">
                 <button
                   type="submit"
@@ -236,7 +231,7 @@ const LeadForm = () => {
             </form>
           </div>
 
-          {/* Trust Indicators */}
+
           <div className="mt-12 text-center">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-gray-400">
               <div className="flex items-center gap-2">
