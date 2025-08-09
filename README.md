@@ -15,7 +15,6 @@ A modern, fully functional landing page for Growly, an AI-powered ad creative ge
 - Lead capture form with validation
 - MongoDB database integration
 - Admin dashboard to view leads
-- Dark/Light mode toggle
 - Real-time form submission
 - Error handling and success messages
 - Mobile-first responsive design
@@ -114,8 +113,6 @@ The application will be available at:
 - `POST /api/leads` - Submit lead form data
 - `GET /api/leads` - Get all leads (admin)
 - `GET /api/health` - Health check
-
-## UI Components
 
 ### Landing Page Sections
 
