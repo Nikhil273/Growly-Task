@@ -28,7 +28,8 @@ const AdminDashboard = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-900">
+   leads.length > 0 ? (
+     <div className="min-h-screen bg-gray-900">
       <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16 py-8">
         {/* Leads Table */}
         <div className="bg-gray-800 rounded-lg shadow-sm border border-gray-700 overflow-hidden">
@@ -113,6 +114,13 @@ const AdminDashboard = () => {
         </div>
       </div>
     </div>
+    ) : (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900">
+        <div className="text-center text-gray-400">
+          <p className="text-lg">No leads available</p>
+        </div>
+      </div>
+  )
   )
 }
 
