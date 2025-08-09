@@ -117,7 +117,7 @@ const AdminDashboard = () => {
     ) : (
       <div className="min-h-screen flex items-center justify-center bg-gray-900">
         <div className="text-center text-gray-400">
-          <p className="text-lg">No leads available(or please wait sometime server is starting..</p>
+          <p className="text-lg">No leads available, Please wait sometime server is starting..</p>
         </div>
       </div>
     )
