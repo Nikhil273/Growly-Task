@@ -95,6 +95,8 @@ The application will be available at:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5000
 
+
+
 ## Hosted Links
 
 - **Frontend**: [https://growly-task.vercel.app/](https://growly-task.vercel.app/)
