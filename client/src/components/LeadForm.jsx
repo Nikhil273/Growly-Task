@@ -27,9 +27,7 @@ const LeadForm = () => {
     setIsSubmitting(true)
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL;
-      
-
+      const apiUrl = import.meta.env.VITE_API_URL || 'https://growly-task.onrender.com';
       const response = await axios.post(`${apiUrl}/api/leads`, formData, {
         headers: {
           'Content-Type': 'application/json'
