@@ -1,34 +1,16 @@
 import { useState, useEffect, useCallback } from 'react'
-import {
-  Users,
-  TrendingUp,
-  Calendar,
-  Filter,
-  Search,
-  Download,
-  Eye,
-  Trash2,
-  RefreshCw,
-  ArrowLeft
-} from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Eye, } from 'lucide-react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
 const AdminDashboard = () => {
   const [leads, setLeads] = useState([])
   const [loading, setLoading] = useState(true)
-
-
-
   const apiUrl = import.meta.env.VITE_API_URL
   const fetchLeads = useCallback(async () => {
     try {
       setLoading(true)
-
-
       const response = await axios.get(`${apiUrl}/api/admin/leads`)
-
       if (response.data.success) {
         setLeads(response.data.data.leads)
       }
@@ -45,17 +27,9 @@ const AdminDashboard = () => {
   }, [fetchLeads])
 
 
-
-
   return (
     <div className="min-h-screen bg-gray-900">
-
-
       <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16 py-8">
-
-
-        {/* Filters */}
-
         {/* Leads Table */}
         <div className="bg-gray-800 rounded-lg shadow-sm border border-gray-700 overflow-hidden">
           {loading ? (
@@ -74,6 +48,9 @@ const AdminDashboard = () => {
                   <tr>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
                       Contact
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
+                      Message
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
                       Business Type
@@ -95,6 +72,7 @@ const AdminDashboard = () => {
                           <div className="text-sm font-medium text-white">
                             {lead.name}
                           </div>
+
                           <div className="text-sm text-gray-400">
                             {lead.email}
                           </div>
@@ -102,6 +80,9 @@ const AdminDashboard = () => {
                             {lead.phone}
                           </div>
                         </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                        {lead.message ? lead.message : 'No message provided'}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                         {lead.businessType}
@@ -121,7 +102,6 @@ const AdminDashboard = () => {
                           >
                             <Eye size={16} />
                           </button>
-
                         </div>
                       </td>
                     </tr>
@@ -130,8 +110,6 @@ const AdminDashboard = () => {
               </table>
             </div>
           )}
-
-
         </div>
       </div>
     </div>

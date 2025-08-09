@@ -93,7 +93,6 @@ router.post('/', leadValidationRules, asyncHandler(async (req, res) => {
         phone,
         businessType,
         message,
-        ipAddress: req.ip
       });
 
       await sendEmail({
@@ -104,7 +103,7 @@ router.post('/', leadValidationRules, asyncHandler(async (req, res) => {
       });
     } catch (emailError) {
       console.error('Failed to send email notification:', emailError);
-      // Don't fail the request if email fails
+
     }
   }
 

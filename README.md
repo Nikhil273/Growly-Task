@@ -106,7 +106,8 @@ The application will be available at:
 ### Frontend Routes
 
 - `/` - Landing page with hero, features, and lead form
-- `/admin` - Admin dashboard to view submitted leads
+
+- `/admin` -I have added a button in header to go to admin dashboard but you can also access it directly at `/admin`
 
 ### Backend API Routes
 

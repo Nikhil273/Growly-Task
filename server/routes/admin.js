@@ -29,10 +29,8 @@ const authenticateAdmin = (req, res, next) => {
 // @access  Admin only
 router.get('/leads', authenticateAdmin, asyncHandler(async (req, res) => {
   try {
-
     const leads = await Lead.find({})
       .sort({ createdAt: -1 });
-
     res.json({
       success: true,
       data: {
